@@ -1,52 +1,23 @@
-# StackOverflow-assistant-bot
+# Stackoverflow Assistant
+![](https://www.google.ae/url?sa=i&url=https%3A%2F%2Fchatbotslife.com%2Fwhat-you-need-to-know-about-chatbot-development-4900e9fbf702&psig=AOvVaw1aYb7veZmINYlCOvhPyVRr&ust=1630639440266000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJDt47ur3_ICFQAAAAAdAAAAABAD)
+
+A Natural Language Processing project where programmers can solve their bugs in code or doubts regarding C++ and java by having a natural language conversation with a bot. This was an end-to-end NLU and NLG project which was hosted on telegram and deployed on AWS.
+
+# Prereqisites
+
+OS type and version: macOS Catalina, Version 10.15.7,
+
+System type: 64-bit OS, x64-based processor
+
+Python version: >=3.7
 
 
+# Overview
+The bot utilises a pretrained neural network which was then fine tuned for the question and answers dataset of stackoverflow assistant. A dialogue manager was sed in order to provide the slot taggers and intents from the natural language which were then utilised by the answer ranking system in-order to provide the most appropriate answer. 
 
-*Dialogue chat bot*, which will be able to:
-* answer programming-related questions (using StackOverflow dataset).
-* chit-chat and simulate dialogue on all non programming-related questions.
-### Prerequisites
-This tutorial requires the following packages:
+The bot was dockeried and deployed on an Aamazon EC2 instance. 
 
-* Anaconda Package
-* tensorflow version 1.2 or later: https://www.tensorflow.org
-* ipython/jupyter version 4.0 or later, with notebook support
-* chatterbot
-* nltk
-* sklearn 
-* requests
-### installation
+Telegram bot ID : @rish_bot
 
-##### Anaconda
-* https://conda.io/docs/user-guide/install/linux.html
+# Dataset
 
-##### Tensorflow
-* https://www.tensorflow.org/install/
-
-##### jupyter notebook
-* https://ipython.org/
-
-##### chatterbot
-* https://chatterbot.readthedocs.io/en/stable/setup.html
-
-##### nltk
-* pip install nltk
-
-##### Sklearn
-* pip install sklearn
-
-##### Requests
-* pip install requests
-
-##### Running 
-* First Extract word_embeddings.tsv file from word_embeddings.tar.xz.Then run the StackoverBot-project.ipynb notebook to get all the necessary .pkl file.
-
-* We are going to integrate the bot to Telegram messenger. To do so, you will need to create a token and use it to run the bot.
-
-    * Talk to @BotFather in Telegram. The command "/newbot" will create a bot for you. You will be prompted to enter a name and a username for your bot. After that, you will be given a token.
-    * Run the 'Hello world' bot with the scripted provided for you: python3 main_bot.py --token=YOUR_TOKEN
-
-You can now talk to this bot in Telegram!
- 
-### Acknowledgments
-Got the dataset from Natural Language Processing course (Coursera) https://www.coursera.org/learn/language-processing
